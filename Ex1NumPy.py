@@ -35,11 +35,14 @@ def sortAsc(arr):
 def sortDes(arr):
     return np.sort(arr)[::-1]
 
+def printArray(arr):
+    print("Average is", average(arr))
+    print("Dev. std. is %.3f" %standard_deviation(arr))
+    print("Max value is", findMax(arr))
+    print("Min value is", findMin(arr))
+    print("Array + 5 is", addFiveElem(arr))
+    print("Sort in ascending order is", sortAsc(arr))
+    print("Sort in descending order is", sortDes(arr))
+
 arr = init_array()
-print("Average is", average(arr))
-print("Dev. std. is %.3f" %standard_deviation(arr))
-print("Max value is", findMax(arr))
-print("Min value is", findMin(arr))
-print("Array + 5 is", addFiveElem(arr))
-print("Sort in ascending order is", sortAsc(arr))
-print("Sort in descending order is", sortDes(arr))
+printArray(arr)
