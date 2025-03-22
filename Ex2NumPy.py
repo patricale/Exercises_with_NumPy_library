@@ -11,7 +11,7 @@ def init_matrix():
     mat_1 = np.random.randint(1, 101, size = (3, 3))
     mat_2 = np.random.randint(1, 101, size = (3, 3))
     print("My first matrix is:\n", mat_1, "\n")
-    print("My second matrix is\n", mat_2, "\n")
+    print("My second matrix is:\n", mat_2, "\n")
     return mat_1, mat_2
 
 def sum(mat_1, mat_2): 
